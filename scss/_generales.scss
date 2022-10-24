@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    //Tamaño momentaneo. 
+    font-size: 3rem;
+
+    .titulos {
+        margin: 2rem;
+        text-align: center;
+
+        h1 {
+            color: $tituloPrincipal;
+            font-weight: bold;
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-style: italic;
+        }
+    }
+}
+
+/*IMÁGENES*/
+
+.imgCursos {
+    padding-top: 2rem;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* CARDS */
+
+.card {
+    height: 40rem;
+}
+
+/* CAROUSEL */
+
+.imgCarousel {
+    height: 450px;
+    object-fit: cover;
+}
+
+/*IMAGEN CENTRAL*/
+
+.imgCentral {
+    height: 400px;
+}
+
+/*HERO*/
+
+.tit {
+    color: $tituloPrincipal;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.parrafo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.botonesHero {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: $fondos;
+    color: black;
+}

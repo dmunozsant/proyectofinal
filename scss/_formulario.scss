@@ -1,0 +1,32 @@
+.formulario {
+    font-size: 3rem;
+
+    input {
+        height: 4rem;
+
+        &:focus{
+            border: black 2px solid;
+        }
+    }
+
+    
+
+    textarea{
+        font-size: 3rem;
+        
+        &:focus {
+            border: black 2px solid;
+        }
+    }
+    
+
+
+    button {
+        font-size: 2rem;
+        background-color: $fondos;
+
+        &:hover {
+            background-color: $color-secundario;
+        }
+    }
+}

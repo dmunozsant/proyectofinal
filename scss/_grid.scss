@@ -1,0 +1,48 @@
+/*GRID AREA: */
+
+@for $i from 1 to 7 {
+    .card#{$i} {
+        grid-area: card#{$i};
+    }
+}
+
+
+
+.contenedorGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: 
+    "card1 card1"
+    "card3 card4"
+    "card5 card6"
+    "card2 card6";
+    gap: 1rem;
+
+    .bordes {
+        border: 1px solid $color-secundario;
+        border-radius: 4px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section {
+        text-align: center; 
+        padding: 1.5rem;
+        
+
+        h2 {
+            color:$tituloPrincipal;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
+
+
