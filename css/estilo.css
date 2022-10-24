@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem; }
+  body .titulos {
+    margin: 2rem;
+    text-align: center; }
+    body .titulos h1 {
+      color: #BC2C1A;
+      font-weight: bold;
+      font-size: 3.5rem; }
+    body .titulos p {
+      font-style: italic; }
+
+/*IMÁGENES*/
+.imgCursos {
+  padding-top: 2rem;
+  height: 200px;
+  object-fit: contain; }
+
+/* CARDS */
+.card {
+  height: 40rem; }
+
+/* CAROUSEL */
+.imgCarousel {
+  height: 450px;
+  object-fit: cover; }
+
+/*IMAGEN CENTRAL*/
+.imgCentral {
+  height: 400px; }
+
+/*HERO*/
+.tit {
+  color: #BC2C1A;
+  font-weight: bold;
+  font-size: 5rem; }
+
+.parrafo {
+  font-weight: bold;
+  font-size: 2rem; }
+
+.botonesHero {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #E6F1F0;
+  color: black; }
+
+/*GRID AREA: */
+.card1 {
+  grid-area: card1; }
+
+.card2 {
+  grid-area: card2; }
+
+.card3 {
+  grid-area: card3; }
+
+.card4 {
+  grid-area: card4; }
+
+.card5 {
+  grid-area: card5; }
+
+.card6 {
+  grid-area: card6; }
+
+.contenedorGrid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: "card1 card1"
+ "card3 card4"
+ "card5 card6"
+ "card2 card6";
+  gap: 1rem; }
+  .contenedorGrid .bordes {
+    border: 1px solid #7FB7BE;
+    border-radius: 4px; }
+  .contenedorGrid .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .contenedorGrid section {
+    text-align: center;
+    padding: 1.5rem; }
+    .contenedorGrid section h2 {
+      color: #BC2C1A;
+      font-weight: bold;
+      font-size: 3rem; }
+
+footer {
+  background-color: #E6F1F0; }
+  footer ul li a {
+    text-transform: uppercase;
+    font-weight: bold; }
+
+header {
+  background-color: #E6F1F0; }
+  header ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 1rem; }
+
+@media (max-width: 700px) {
+  .contenedorGrid {
+    grid-template-areas: "card1"
+ "card2"
+ "card3"
+ "card4"
+ "card5"
+ "card6"; }
+  .contenedorFlex iframe {
+    max-width: 95%; } }
+
+.contenedorFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem; }
+
+.formulario {
+  font-size: 3rem; }
+  .formulario input {
+    height: 4rem; }
+    .formulario input:focus {
+      border: black 2px solid; }
+  .formulario textarea {
+    font-size: 3rem; }
+    .formulario textarea:focus {
+      border: black 2px solid; }
+  .formulario button {
+    font-size: 2rem;
+    background-color: #E6F1F0; }
+    .formulario button:hover {
+      background-color: #7FB7BE; }
